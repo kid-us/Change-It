@@ -187,7 +187,7 @@ ul, li{
 
 .advert-image{
     margin-top: 80px;
-    background-image: url(Img/graduation.png);
+    background-image: url(../Img/graduation.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
