@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;400&family=Russo+One&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.section-one{
+    /* background-color: #403F4C; */
+    background-color: #fcffff;
+}
+
+.section-two{ 
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Russo One', sans-serif;
+}
+
+p, a, li, span, input, label, textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #403F4C;
+}
+
+div a{
+    text-decoration: none;
+    color: #000;
+}
+
+div a:hover{
+    color: #000;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 6;
+}
+
+.account{
+    border-radius: 60px;
+    color: #fff;
+    background-color: #403F4C;
+    box-shadow: 3px 3px 3px #dc3545;
+}
+
+.account:hover{
+    box-shadow: none;
+    color: #fff;
+    transition: ease-out 1s;
+}
+
+.menu-list li{
+    list-style: none;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.316);
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-left: 0.1px solid #8c8a8a;
+    border-bottom: 0.1px solid #8c8a8a;
+    z-index: 8;
+}
+
+#menu-close-btn{
+    margin-left: 100px;
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-weight: bolder;
+}
+.slogan{
+    margin-top: 200px;
+    padding: 15px;
+    color: #403F4C;
+    font-size: large;
+    margin-bottom: 90px;
+    background-image: url(/Img/undraw_Developer_activity_re_39tg\ \(1\).png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 4px #907575;
+}
+
+.input-group input{
+    border: 1px solid #403F4C;
+    box-shadow: 2px 2px 3px #dc3545;
+}
+
+.input-group input::placeholder{
+    font-style: italic;
+    font-size: small;
+}
+
+.input-group input:focus{
+    border-color: #403F4C;
+    box-shadow: none;
+    box-shadow: 5px 5px 5px #dc3545;
+    font-weight: 600;
+}
+
+.input-group button{
+    border: 1px solid #403F4C;
+    box-shadow: 2px 2px 3px #dc3545;
+}
+
+.glass-bg{
+    padding: 50px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.bg-main{
+    color: #dc3545;
+}
+
+.bg-active{
+    background-color: #fff;
+    columns: #000;
+    font-weight: bolder;
+}
+
+.img-round{
+    border-radius: 25%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.footer-list li{
+    margin-top: 5px;
+}
+
+.footer-list li a:hover{
+    margin-left: 1px;
+    color: #403F4C;
+}
+
+.advert-image{
+    margin-top: 80px;
+    background-image: url(/Img/graduation.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    text-shadow: 2px 2px 4px #8c8a8a;
+}
+
+.type{
+    font-size: clamp(3px,3vw, 28px);
+}
+
+.type-paragraph{
+    font-size: clamp(2px, 2.5vw, 16px);
+}
+
+.on-hover:hover{
+    scale: 1.02;
+    transition: ease 0.5s;
+}
+
+.our-courses:hover{
+    margin-left: 0.5px;
+}
+
+.our-courses a:hover{
+    color: #554444;
+}
+
+/* Scroll btn */
+.scroll{
+    position: fixed;
+    top: 75%;
+    right: 0;
+    margin-right: 50px;
+    z-index: 1;
+    width: 35px;
+    height: 40px;
+    border: 1px solid #403F4C;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 4px 4px 5px #dc3545;
+}

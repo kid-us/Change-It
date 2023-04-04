@@ -4,9 +4,531 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="/Css/animate.min.css">
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="/Css/aos.css">
+    <title>Change It!</title>
 </head>
-<body>
-    <h1>Hello Github</h1>
+<body id="body" class="section-one">
+    <div id="overlay" class="hidden"></div>
+    <header class="container-fluid">
+        <!-- navbar -->
+        <nav class="nav-bar">
+            <!-- large screens -->
+            <div class="d-none d-md-block">
+                <div class="row justify-content-center fw-semibold mt-4 pb-3 pt-2 border-bottom small">
+                    <div class="col-md-2 col-g-2"> 
+                        <a href="#" class="fs-6">
+                            <img src="/Img/logo.png" alt="" width="25px">
+                         Change It
+                        </a> 
+                    </div>
+                    <div class="offset-3 col-md-1 col-lg-1 text-center"> <a href="#"> Testimony</a> </div>
+                    <div class="col-md-1 col-lg-1 text-center"> <a href="#"> FAQ</a> </div>
+                    <div class="col-md-1 col-lg-1 text-center"> <a href="#">Founders</a> </div>
+                    <div class="col-md-4 col-lg-3 text-center">     
+                        <a href="login.html" class="account p-2 px-3">
+                            <i class="bi bi-box-arrow-in-right"> &nbsp; </i>
+                            <span class="small">
+                                Sign Up / Sign In
+                            </span> 
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <!-- small screens -->
+            <div class="d-block d-md-none">
+                <div class="row justify-content-between fw-semibold  pt-4 border-bottom">
+                    <div class="col-4 ms-5"> 
+                        <a href="#"> 
+                            <img src="/Img/logo.png" alt="" width="25px">    
+                            Change It
+                        </a> 
+                    </div>
+                    <div class="col-3">
+                        <p id="menu-btn" class="bi bi-list fs-5 cursor"></p>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- scroll btn -->
+        <button id="scroll-btn" class="scroll hidden">⇡</button>
+    <!-- menu -->
+    <div id="menu" class="hidden animate__animated animate__fadeInRight">
+        <ul class="menu-list fw-semibold">
+            <div class="mt-4">
+                <span class="me-5 fs-5">
+                    <a href="#" class="ms-1"> 
+                        <img src="/Img/logo.png" alt="" width="25px">    
+                        Change It
+                    </a>
+                </span>
+                <span>
+                    <button id="menu-close-btn" class="fs-2"> &times; </button>
+                </span>    
+            </div>
+            <hr>
+
+            <li class="mt-5">
+                <a href="#">Testimony</a>
+            </li>
+            <li>
+                <a href="#">Founder</a>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="register.html">Sign Up</a>
+            </li>
+            <li>
+                <a href="login.html">Sign In</a>
+            </li>
+        </ul>
+        <p class="text-center mt-5 small fw-semibold"> &copy; 2023 Change It. All rights reserved</p>
+    </div>
+    
+    <div class="container">
+        <!-- slogan -->
+        <div class="slogan">
+            <div class="">
+                <h3 class="w-75">Build Your Career Now!</h3>
+                <h5 class="w-75 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis odio sit dolores! Non ratione nemo recusandae porro, quasi, molestia.</h5>
+    
+                <form action="#" class="mt-5 w-75">
+                    <div class="input-group">
+                        <input type="text" name="keyword" id="" class="form-control" placeholder="Find your Career" autocomplete="off">
+                        <button class="btn btn-warning bi bi-search"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- what's you get -->
+        <h6>What's You Get</h6>
+        <div class="mb-5 shadow-lg rounded mt-3" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="1500">
+            <!-- menus -->
+            <div class="row justify-content-center mt-5 text-center mx-1 fw-semibold">
+                <div id="marketing" class="col-3 cursor p-4 bg-active">
+                    <p class="bi bi-bank type"></p>
+                    <p class="type-paragraph border-bottom border-bottom">Marketing</p>
+                </div>
+                <div id="programming" class="col-3 cursor p-4 bg-main">
+                    <p class="bi bi-code type"></p>
+                    <p class="type-paragraph border-bottom">Programming</p>
+                </div>
+                <div id="data" class="col-3 cursor p-4 bg-main">
+                    <p class="bi bi-bar-chart-fill type"></p>
+                    <p class="type-paragraph border-bottom">Data Analyst</p>
+                </div>
+                <div id="lang" class="col-3 cursor p-4 bg-main">
+                    <p class="bi bi-translate type"></p>
+                    <p class="type-paragraph border-bottom">Languages</p>
+                </div>
+            </div>
+            <!-- menu pages -->
+            <!-- marketing -->
+            <div id="marketing-page" class="px-5 py-3 mt-5 small fw-semibold">
+                <div class="row ">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/affiliate.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Affiliate Marketing</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/social-media.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Social-Media Marketing</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/influencer.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Influencer Marketing</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- programming -->
+            <div id="programming-page" class="px-5 py-5 mt-5 small fw-semibold hidden">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/programming.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Web Development</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/app-development.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Back-end Development</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/front-end.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Front-end Development</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>  
+                    <div class="col-lg-2 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/mobile-development.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-6 mt-2">
+                        <h6>Mobile App Development</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>    
+                </div>
+            </div>
+            <!-- data analyst -->
+            <div id="data-page" class="px-5 py-5 mt-5 small fw-semibold hidden">
+                <div class="row justify-content-center hidden">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/chart.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 mt-2">
+                        <h6>Influencer Marketing</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- language -->
+            <div id="lang-page" class="px-5 py-5 mt-5 small fw-semibold hidden">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-2">
+                        <img src="/Img/languages.png" alt="" width="100px">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 mt-2">
+                        <h6>Languages</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis sint voluptatibus sunt dolor, excepturi veniam atque quo commodi repellat modi est, inventore deserunt sequi illum neque quas tenetur, quasi officiis. Asperiores minus ad earum error.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- advert -->
+        <div class="mt-5 fw-semibold advert-image p-3" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="col-lg-7 col-md-8 col-sm-8 col-xs-8 mb-5 glass-bg p-5">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed voluptatibus, cumque sit cum maxime saepe accusamus molestiae deserunt amet quo. Impedit ab asperiores sit ducimus adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nobis repellat. Eveniet veritatis culpa sed aut labore nihil similique eius unde</p>
+                <a href="#" class="btn btn-danger px-5">Join Free</a>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 text-center mb-5 d-none d-md-block">
+                <img src="/Img/programming.png" alt="" width="200px">
+            </div> -->
+        </div>
+        <!-- Top Courses -->
+        <div class="row justify-content-center my-5 fw-semibold small" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h5 class="mb-5">Top Courses</h5>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5 px-3">
+                <div class="shadow cursor text-center on-hover">
+                    <img src="/Img/app-development.png" alt="" class="rounded pt-3" width="165px">
+                    <div class="px-2 py-1">
+                        <h6>Programming</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum.</p>
+                        <p>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="ms-5 small">1,283 Attendant</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5 px-3 ">
+                <div class="shadow cursor text-center on-hover">
+                    <img src="/Img/front-end.png" alt="" class="rounded pt-3" width="165px">
+                    <div class="px-2 py-1">
+                        <h6>Front-end Dev</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum.</p>
+                        <p>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star text-warning"></span>
+                            <span class="ms-5 small">1,283 Attendant</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5 px-3">
+                <div class="shadow cursor text-center on-hover">
+                    <img src="/Img/affiliate.png" alt="" class="rounded pt-3" width="165px">
+                    <div class="px-2 py-1">
+                        <h6>Affiliate Marketing</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum.</p>
+                        <p>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star text-warning"></span>
+                            <span class="ms-5 small">1,283 Attendant</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5 px-3">
+                <div class="shadow cursor text-center on-hover">
+                    <img src="/Img/mobile-development.png" alt="" class="rounded pt-3" width="165px">
+                    <div class="px-2 py-1">
+                        <h6>Mobile Dev</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum.</p>
+                        <p>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star text-warning"></span>
+                            <span class="bi bi-star text-warning"></span>
+                            <span class="ms-5 small">1,283 Attendant</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Explore US -->
+        <h5 class="my-5">Our Courses</h5>
+        <div class="row justify-content-center fw-semibold" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="col-lg-4 col-md-4 col-sm-12 px-5 py-3">
+                <img src="/Img/undraw_Online_learning_re_qw08.png" alt="" class="w-100" style="border-radius: 50%;">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="our-courses">
+                    <a href="#">
+                            <div class="row">
+                                <div class="offset-1 col-3 mb-4">
+                                    <img src="/Img/chart.png" alt="" width="60px">
+                                </div>
+                                <div class="col-7 mt-1 small">
+                                <h6>Data Analyst</h6>
+                                <p>Over 200 courses</p>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <img src="/Img/programming.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Programming</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <img src="/Img/influencer.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Influencer Marketing</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <img src="/Img/social-media.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Social Media Marketing</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3 mb-4">
+                                <img src="/Img/front-end.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Front-end Development</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <img src="/Img/mobile-development.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Mobile Development</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <img src="/Img/app-development.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Back-end Development</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-courses">
+                    <a href="#">
+                        <div class="row">
+                            <div class="offset-1 col-3">
+                                <img src="/Img/affiliate.png" alt="" width="60px">
+                            </div>
+                            <div class="col-7 mt-1 small">
+                                <h6>Affiliate Marketing</h6>
+                                <p>Over 200 courses</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- community -->
+        <div class="row justify-content-center my-5 g-4 text-center fw-semibold" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h3>From Our Community</h3>
+            <p class="fs-3">More than 10,000 peoples are started bulding their career Only you . . . !</p>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <img src="/Img/sketch.PNG" alt="" class="img-round">
+                <p class="fs-5 text-danger py-4">Liya</p>
+                <q><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, earum reiciendis. Aut ex consequatur omnis eius error, dolore, architecto nam voluptatem corrupti reprehenderit.</em></q>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mx-5">
+                <img src="/Img/leo.jpg" alt="" class="img-round  ">
+                <p class="fs-5 text-danger py-4">Leo</p>
+                <q><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, earum reiciendis. Aut ex consequatur omnis eius error, dolore, architecto nam voluptatem corrupti reprehenderit.</em></q>
+           </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <img src="/Img/zeritu.jpg" alt="" class="img-round">
+                <p class="fs-5 text-danger py-4">Zeritu</p>
+                <q><em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, earum reiciendis. Aut ex consequatur omnis eius error, dolore, architecto nam voluptatem corrupti reprehenderit.</em></q>
+            </div>
+        </div>
+    </div>
+
+    <footer class="section-one" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="1500">
+        <div class="container mt-5 border-top">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <form action="#" class="mt-4 mb-3">
+                        <div class="input-group">
+                            <input type="text" name="email" id="" class="form-control" placeholder="Contact Us" autocomplete="off">
+                            <button class="btn btn-secondary bi bi-telegram"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="offset-lg-4 offset-md-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 mt-4 text-center mb-3">
+                    <a href="#">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-telegram fs-5 mx-5"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-twitter fs-5"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-facebook fs-5 mx-5"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </a>
+                </div>
+                <hr>
+
+                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                    <ul class="footer-list small fw-semibold">
+                        <h6 class="mb-3">Change It</h6>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                    <ul class="footer-list small fw-semibold">
+                        <h6 class="mb-3">US</h6>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Cookie Settings</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                    <ul class="footer-list small fw-semibold">
+                        <h6 class="mb-3">Courses</h6>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Data Analyst</a></li>
+                        <li><a href="#">Accounting</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                    <ul class="footer-list small fw-semibold">
+                        <h6 class="mb-3">More</h6>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Modern Slavery Statement</a></li>
+                    </ul>
+                </div>
+                <p class="text-center mt-4 small fw-semibold"><i class="bi bi-lightbulb"></i> &copy; 2023 Change It. All rights reserved.</p>
+            </div>                
+        </div>
+    </footer>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

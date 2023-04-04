@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;400&family=Russo+One&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.section-one{
+    /* background-color: #403F4C; */
+    background-color: #fcffff;
+
+}
+.section-two{ 
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Russo One', sans-serif;
+}
+
+p, a, li, span, input, label, textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #403F4C;
+}
+
+.section-one{
+    /* background-color: #403F4C; */
+    background-color: #fcffff;
+}
+
+div a{
+    text-decoration: none;
+    color: #000;
+}
+
+div a:hover{
+    color: #000;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.btn{
+    background-color: #403F4C;
+    box-shadow: 3px 3px 4px #dc3545;
+    color: #fff;
+}
+
+.form-floating input{
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+
+.form-floating select{
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+
+.form-floating select:focus{
+    border-color: #403F4C;
+    box-shadow: 2px 2px 3px #dc3545; 
+}
+
+.form-floating input:focus{
+    border-color: #403F4C;
+    box-shadow: 2px 2px 3px #dc3545;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #403F4C;
+    box-shadow: none;
+    color: #fff;
+}
+
+.login-form{
+    max-width: 450px;
+    /* margin-top: 50px; */
+}
